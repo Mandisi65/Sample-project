@@ -1,4 +1,4 @@
-const breakfastMenu = ['Pancakes', 'Eggs Benedict', 'Oatmeal', 'Frittata'];
+const breakfastMenu = ['Pancakes -$12', 'Eggs Benedict -$22.00', 'Oatmeal -$21.99', 'Frittata -$15'];
 const mainCourseMenu = ['Steak', 'Pasta', 'Burger', 'Salmon'];
 const dessertMenu = ['Cake', 'Ice Cream', 'Pudding', 'Fruit Salad'];
 
@@ -14,7 +14,7 @@ document.getElementById("breakfastMenuItems").innerHTML = breakfastMenuItemsHTML
 
 let mainCourseItem = '';
 mainCourseMenu.forEach((item, index)=>{
-    mainCourseItem += `<p>Item ${index +1}: ${item}</p>`;
+    mainCourseItem += `<p>Item ${index +1}: $${item}</p>`;
 });
 document.getElementById('maincourseMenuItems').innerHTML = mainCourseItem;
 
